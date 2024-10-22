@@ -5,7 +5,7 @@ class Program
 {
     static void Main()
     {
-        Console.ForegroundColor = ConsoleColor.Cyan;
+        Console.ForegroundColor = ConsoleColor.Cyan; \\ Изменить 
         connect();
         control();
     }
@@ -19,7 +19,7 @@ class Program
             Console.WriteLine("░╚████╔╝░██║██╔══██╗██╔══██╗██╔══██║░░░██║░░░██║░░██║██╔══██╗██║░░██╗██║░░██║██║╚████║░░░██║░░░██╔══██╗██║░░██║██║░░░░░");
             Console.WriteLine("░░╚██╔╝░░██║██████╦╝██║░░██║██║░░██║░░░██║░░░╚█████╔╝██║░░██║╚█████╔╝╚█████╔╝██║░╚███║░░░██║░░░██║░░██║╚█████╔╝███████╗");
             Console.WriteLine("░░░╚═╝░░░╚═╝╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░╚═╝░╚════╝░░╚════╝░╚═╝░░╚══╝░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░╚══════╝");
-            Console.WriteLine("                                 Подключенно к VIBRATOR-W1 (192.168.0.108)");
+            Console.WriteLine("                                 Подключенно к (name) (your.ip.vibr)");
             Console.WriteLine("Выберите действие:");
             Console.WriteLine("1. Включить (по умолчанию)");
             Console.WriteLine("2. Выключить");
@@ -142,13 +142,17 @@ class Program
             {
                 case "1":
                     Console.WriteLine("Покдлючение к 192.168.0.105...");
-                bar();
-                Console.Clear();
+                    ip.connect(insert);
+                         insert(tag) = ("YOUR_IP_VIBRATOR_ISSUE")
                 banner();
                 break;
                 case "2":
                     Console.WriteLine("Вставьте шнур в USB-порт...");
-                Console.WriteLine("Error 502");
+                Console.CheckUSB(any(connect));
+                    {
+                        Console.WriteLine("Подключено!");
+                        banner();
+                    }
                     break;
                 default:
                     Console.WriteLine("Неверный выбор, попробуйте снова.");
@@ -163,6 +167,7 @@ class Program
     static void control()
     {
         Console.WriteLine("Выполнение действия...");
+        Console.Connect(insert); \\ YOUR_IP
         bar();
         Console.WriteLine("\nУспех!");
         banner();
